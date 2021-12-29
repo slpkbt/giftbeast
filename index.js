@@ -58,7 +58,6 @@ function start() { // Start function
     console.log(`Loaded ${proxies.length} proxies, make sure that they're HTTP/S!`)
     for(let i = 0; i < threads; i++) {
         setInterval(() => {
-
             let code = g(glength);
     
             let takedproxy = proxies[Math.floor(Math.random() * proxies.length)] // We take a random proxy from our proxy file
